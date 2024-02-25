@@ -1,0 +1,151 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ak's Classes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+    <link rel="manifest" href="assets/icon/site.webmanifest">
+    <style>
+        #section15 {
+            width: 100%;
+            height: 75vh;
+            background-image: url(assets/img/sbg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="section15">
+        <div id="div1">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="row">
+          <div class="col-sm" style="cursor: pointer;" onclick="window.location.href='index.html'">
+            <h3 class="navh" id="navh1">Indoor</h3>
+            <h4 class="navh" id="navh2">Advanture</h4>
+          </div>
+          <div class="col-sm"></div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" style="border: 3px solid black;" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li  id='loginnav' class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Login / Register
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="login.html">
+                        <button type="button" class="btn btn-outline-danger m-1">Login</button>
+                      </a></li>
+                    <li><a class="dropdown-item" href="register.html"><button type="button"
+                          class="btn btn-outline-success m-1">Register</button></a></li>
+                  </ul>
+                </li>
+                <li id='usernav' class="nav-item dropdown d-none">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    User
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="userpanel.html">
+                        <button type="button" class="btn btn-outline-success m-1">User Profile</button>
+                      </a></li>
+                    <li><a class="dropdown-item" href="logout.inc.html">
+                        <button type="button" class="btn btn-outline-danger m-1">Log Out</button>
+                      </a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm">
+            <h1 id="h2" style='margin-top:35%;font-size:3.5rem;text-shadow: 10px 5px 0px rgba(0,0,0,0.3);'>Register</h1>
+            </div>
+            <div class="col-sm"></div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section class='bg-dark'>
+                            <form action="newstudentregister.inc.html" method='post' class='p-5'>
+                        <div class="bg-dark text-light px-5">
+                            <label for="rname">First Name:</label>
+                            <input required class='p-1' type="text" id="rname" name="rname" placeholder="Enter Your First Name">
+                            <label for="lname">Last Name:</label>
+                            <input required class='p-1' type="text" id="lname" name="lname" placeholder="Enter Your Last Name">
+                            <label for="class">Class:</label>
+                            <input required class='p-1' type="number" id="class" name="class" placeholder="Enter Your Class">
+                            <label for="studentphoneno">Student Phone No.:</label>
+                            <input required class='p-1' maxlength="10" type="text" id="studentphoneno" name="studentphoneno" placeholder="Enter Your Phone No.">
+                            <label for="studentparentsphoneno">Student Parents Phone No.:</label>
+                            <input required class='p-1' type="text" maxlength="10" id="studentparentsphoneno" name="studentparentsphoneno" placeholder="Enter Your Parents Phone No.">
+                            <label for="runame">User Name:</label>
+                            <input required class='p-1' type="text" id="runame" name="runame" placeholder="Enter Your User Name">
+                            <label for="remail">Email:</label>
+                            <input required class='p-1' type="text" name="remail" id="remail" placeholder="Enter Your Email">
+                            <label for="rpassword">Password:</label>
+                            <input required class='p-1' type="password" name="rpassword" id="rpassword"
+                                placeholder="Enter Your Password">
+                            <label for="rcpassword">Confirm Password:</label>
+                            <input required class='p-1' type="password" name="rcpassword" id="rcpassword"
+                                placeholder="Re-Enter Your Password">
+                            <span>5</span><span>+</span><span>7</span>
+                            <input class='d-none' type="text" value='12' name='hvq1'>
+                            <input class='p-1' type="text" required name="hv" placeholder="Enter Your Ans">
+                        </div>
+                        <div class="bg-dark px-5">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            <input type="submit" class="btn btn-outline-success sbtn" value="Register New User"
+                                name="rsbtn">
+                        </div>
+                    </form>
+    </section>
+    <section id="section5" class="row bg-dark py-5">
+        <p class="text-light fw-bold text-center">Tapshi Baba Tmmple,South Dhadka,Asansol,India || Email: akashburnwal46@gmail.com</p>
+        <p class="text-light my-2 fw-bold text-center">Copyright © 2023 <a title="Click to visit profile" href="https://www.instagram.com/ak76024/" target="_blank">@ak76024</a></p>
+    </section></body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+</html>
